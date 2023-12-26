@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Exo+2&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@700&family=Outfit:wght@400;700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Exo+2&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@700&family=Open+Sans:ital@1&family=Outfit:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+
+
+
+/* 
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+  font-family: 'Open Sans', sans-serif;
+## Typography */
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta:hsl(300, 69%, 71%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: url(bg-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--violet);
+
+  
+}
+body nav{
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+body nav img{
+    width: 170px;
+}
+
+body .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+body .container picture{
+    width:600px;
+}
+body .container picture img{
+    width: 100%;
+}
+
+body .container  .content{
+    width: 450px;
+    margin-left: 50px;
+    margin-bottom: 120px;
+    
+}
+body .container  .content h1{
+    text-align: left;
+    font-size: 400;
+    font-size: 34px;
+    line-height: 50px;
+    
+}
+body .container  .content p{
+   
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+body .container  .content button{
+    padding: 15px 55px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+    color: var(--violet);
+    cursor: pointer;
+    transition: 0.4s;
+}
+body .container  .content button:hover{
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+body footer{
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+body footer .social-media{
+    position: absolute;
+    right: 0;
+}
+body footer .social-media a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+body footer .social-media a i{
+   font-size: 10px;
+
+   padding: 10px 10px;
+   border: 1px solid white;
+   border-radius: 50%;
+}
+body footer .social-media a .face{
+    padding: 10px 12px;
+}
+body footer .social-media a .inst{
+    padding: 10px 11px;
+}
+body footer .social-media a i:hover{
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+@media(max-width: 450px){
+
+
+    body .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 70vh;
+        position: relative;
+    }
+    body .container picture{
+        width:420px ;
+    }
+    body .container picture img{
+        width: 100%;
+    }
+    body .container  .content{
+        width: 380px;
+        margin-right: 30px;
+        
+       
+    }
+    body .container  .content h1{
+        text-align: center;
+    }
+    body .container  .content p{
+        text-align: center;
+        font-size: 17px;
+    }
+    body .container  .content button{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+   
+    }
+    body footer{
+        width: 35%;
+        margin-top: 40px;
+    }
+    body footer .social-media{
+        width: 100%;
+        margin: auto;
+    }
+    body footer .social-media a i{
+        font-size: 13px;
+    }
+}
